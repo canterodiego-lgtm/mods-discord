@@ -1,0 +1,727 @@
+{
+ "5AAAC70D754245DD": {
+  "name": "Server Admin Tools",
+  "desc": "Stats and server management tools. For configuration and all features please find Server Admin Tools Thread on the Arma Discord server, or scan the QR code in-game.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/cc38/f14aeed101b207fa481964979162f7d6820baf5d5a4b55cacb63da8b5193/19674.jpg"
+ },
+ "699CCB2BCCDB6F4C": {
+  "name": "Smart Server Cleaner",
+  "desc": "Lightweight server-side performance utility.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/1881/f460ec1cfb17a173fc5402b544074209deeddb4982d3f037968664acfd36/463193.jpg"
+ },
+ "4A91C8E5F36B47D2": {
+  "name": "All Optimizer",
+  "desc": "Suite modular de optimización de rendimiento para Arma Reforger enfocada en clientes de PC y consola.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/89ab/76115070362eb9f31db5a73737a52482afa05cf260d0cb4190b7bd1515a5/8899.jpg"
+ },
+ "6A2856D7EEDBADFA": {
+  "name": "Ailimiter by DUB",
+  "desc": "To much A.i?",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/8fad/d65665c3f22a36fd4f97177f9a2a7d9abd51a26a0b783f55f000a3f77ec2/97414.jpg"
+ },
+ "685D2419C9F8D128": {
+  "name": "Console Optimization Explosion",
+  "desc": "Console Optimization Pack - Explosions and Blasts Mod",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/a923/317aa2edadec4f9ebfb9ebf1ac9b7d6e9b77209cb9ba07d0148e022c00bd/284795.jpg"
+ },
+ "5F268647F8A1A1F4": {
+  "name": "CRX Enfusion A.I.",
+  "desc": "* ----------------------------------------------------------------\n* Arma Reforger: CRX Enfusion A.I. Modification\n* ----------------------------------------------------------------",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/ae46/68199074e3f392a982185841b12e5ecd501c28a29f2584567375289962f4/34349.jpg"
+ },
+ "6A1876F37D65AB09": {
+  "name": "CDF GameMaster Save",
+  "desc": "Save and reload your Game Master mission, with or without server persistence. Units, groups, waypoints, vehicles, damage and inventories. Configurable autosave.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/066a/4afd39391c4fdd6a13d725d7cb32097278a9679acefa0fc43f5e713a28c9/157045.jpg"
+ },
+ "6474B18696E88E03": {
+  "name": "EnableKillfeed",
+  "desc": "Enables the global killfeed by default, eliminating the need to modify the game mode prefab.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/1265/51b21e91c5fc8930e4f0e3e5d2eb633c4edc84534ce2c6a2312130f60b0e/63448.jpg"
+ },
+ "69E9327A4433F27D": {
+  "name": "BattleWire Discord Monitoring",
+  "desc": "Standalone server-to-Discord reporting with status, connections, detailed kill feed, chat channels, teleport alerts, and separate webhooks. No bot or relay required.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/3ec4/7c1255e5b9efc593d15d8cfc30de8865d9a4e6bb5989e622904bab64620d/247025.jpg"
+ },
+ "695D595DF89EC44E": {
+  "name": "Leaderboard and killfeed",
+  "desc": "since iv had a few messages about my SDZ-strayadayz leaderboard iv decided to make a generic one for other people to use...",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/2614/67907ccdff8d6e1c1a43f2b565f6b5fd25e6eeb0fc7e1aed5dee05cdde0f/277770.jpg"
+ },
+ "62E0B4EB51FCE050": {
+  "name": "Keep Map Markers on Disconnect",
+  "desc": "Prevents the server from deleting the map markers of a player when a disconnect occurs.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/8b96/fcccef04a3502371478c4197e9ad9d550deb4c296f6c28e40cf58e52d443/22569.jpg"
+ },
+ "61C8AD57503CA770": {
+  "name": "No SL Markers",
+  "desc": "Removes squad leader icons from the map completely",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/383a/fb88ac82c8271f0fc8a8f260f9b27bcd5b326d48680a9f2d76f1f7e1b09a/4362.jpg"
+ },
+ "6A2ACE0A596BB7B8": {
+  "name": "UnlimitedGMBudgetByCryneX",
+  "desc": "Removes Game Master budget limits, allowing GMs to keep spawning vehicles, objects, structures and other entities beyond the normal budget.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/6134/fcccc6d1e1f71b70701f9969bec4d2e2397a44919285eee3c946c01c5bd7/376205.jpg"
+ },
+ "5964E0B3BB7410CE": {
+  "name": "Game Master Enhanced",
+  "desc": "Game Master Enhanced (GME), formerly known as Odin's Game Master Additions, is an Arma Reforger mod aimed at improving and expanding the functionality of the Game Master real-time editor.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/5ff9/45dbf6a8ccaa9cafc2f50e3a3dbbae4946ec6afce09ad2dacbdad13f8e8b/28686.jpg"
+ },
+ "646B350F36C6D3E4": {
+  "name": "Breachable Doors",
+  "desc": "Doors you can lock, pick, and breach with multiple methods",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/ae4c/59fb2c8fc854046d12927b548c7d0bd34da91a20259ca6dbe9de673bba13/103658.jpg"
+ },
+ "6511361619D6F4A9": {
+  "name": "Climbable Trees",
+  "desc": "Enhance your guerilla tactics, stealth or ambush capabilities by climbing trees!\n\nBest positioned when you don't move immedeiately after climbing up. \n\nTo climb: (Look at the base of the trees!)",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/1df3/90e6c86b7abbf19c8cb15a1236718e66ce58513318b6701cb21faebdef00/25217.jpg"
+ },
+ "5C9758250C8C56F1": {
+  "name": "Bon Action Animations",
+  "desc": "This mod adds military gestures, dance animations and idle motions with a radial menu to select them (Or via Quick Animation Hotkeys!)",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/f87e/2de49e2337483ee25a6736d04160455be9fb26e503c7d96014bef4283203/134691.jpg"
+ },
+ "5994AD5A9F33BE57": {
+  "name": "Game Master FX",
+  "desc": "Adds explosions, fire, parachute flare and smoke effects to Game Master",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/218d/251c28570effcf4a3dfc979b699af76098984aa7280a7e84d14b1eea43b6/6390.jpg"
+ },
+ "6A3690CF74ECDE97": {
+  "name": "Sunshines Counter-Logistics",
+  "desc": "An entirely new aspect of the war: destructible supplies and sabotage.\n\nAdditionally, contains functionality to reward certain actions and also has an array of griefer-protections.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/dedc/d7378f53129475f8e316868e5b0f8ed4f787f018562b60b4b554e9fe6bec/181554.jpg"
+ },
+ "6A0C41199B1A69F1": {
+  "name": "COC_Banderas",
+  "desc": "WIP",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/3c2e/bab5d2f5f9de2cb35e58eed1c2054b7685763b86dfe1c6de024cc75b5d91/270960.jpg"
+ },
+ "6A3F64F0AFBD34D1": {
+  "name": "T-Shirt_COC_JTF",
+  "desc": "wip\n\nCAMISETA DEL COMANDO CONJUNTO DE OPERACIONES",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/8d5b/e4184ba54965567531713cd70df2cb78a54bffc8746173fdbf3c91f3e1d2/6386.jpg"
+ },
+ "6A13248F837541ED": {
+  "name": "Comando Conjunto Operaciones",
+  "desc": "WIP",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/3c2e/bab5d2f5f9de2cb35e58eed1c2054b7685763b86dfe1c6de024cc75b5d91/270960.jpg"
+ },
+ "6A1A17C188238026": {
+  "name": "Milsim_PVP_Everon_COC",
+  "desc": "WIP",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/39ce/7db774737ed5eb23c6b96cc77e383038013c9cd3fadf1295e38fe383b6f7/246269.jpg"
+ },
+ "6A2D4DB46C2FBA08": {
+  "name": "Carteleria_Relgas_Server1",
+  "desc": "Carteles de reglas para servidores COC-JTF",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/bdbb/4ff50fc81350da5412d2842bb39b7a7e91640756db0231dc7f55f92c8fa8/40577.jpg"
+ },
+ "66593A881DFC62F5": {
+  "name": "Billboard",
+  "desc": "Billboard mod, feel free to use it on your servers/scenarios",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/57ad/da2aecf78f3bc591824c6287679cc49a7292c8590cb8348cf1b257bb33df/82043.jpg"
+ },
+ "684B0A664187B401": {
+  "name": "420s weather Optimisation",
+  "desc": "Rain optimisation patches , This mod is designed for the purpose of optimising rain to better suit low end pc gamers and console gamers , this mod adjust particle effects and density of heavy rain",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/a3e4/413f676788138cad7475cfe1fe7e376edba3fb670796053123fab5e589a5/63301.jpg"
+ },
+ "6528C95796EBEDE0": {
+  "name": "Environmental Ambience Mod",
+  "desc": "Increases environmental ambience around the player.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/0bae/620d995098f9b72301204a11d1ab99ac7b551e0c5a9b5e2b5e6ff87d9248/235441.jpg"
+ },
+ "68D36AC4096ADC5D": {
+  "name": "Working Lighthouses",
+  "desc": "Working Lighthouses for Reforger",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/9131/0b8d9dfb07061a502a9abd7e084edd2f551be508c8c34bd8b5ea074cc17c/127773.jpg"
+ },
+ "68A0D0E3E9E4817D": {
+  "name": "Intels and interactive bombe",
+  "desc": "Bomb: the bomb emits a beeping sound and can be defused by players. It can be triggered by the game master.\n3D asset integration\nAny bug report : https://discord.gg/dWdpNKvZQn\n\nThanks",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/80ce/14dbf5f98df77eafb5169630a154f31b945f6ee19f5aa8c5c4485ec9d4d6/531263.jpg"
+ },
+ "6938C1B83EC5879B": {
+  "name": "Sabotage",
+  "desc": "A vehicle sabotage mod for infiltration and guerrilla tactics.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/5630/e28ddf56836c6d4339d22d495f55d1ba6a6cc99c3a2c5a86c449aa9313f4/475511.jpg"
+ },
+ "69B7164F94A43FD6": {
+  "name": "EGI - Ambient Version",
+  "desc": "Atmospheric Power Failure System - Ambient Version",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/d969/20607c9df559026ff5dc128995037653955613169fd0507784501cfa5c01/205851.jpg"
+ },
+ "6A43330DB33F3518": {
+  "name": "EGI DYNAMIC",
+  "desc": "EGI Dynamic brings tactical gameplay to Reforger with an interactive, multiplayer-synchronized power grid system.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/a381/889ee2a18e6e3917fb8b948e147b54fc530f905eed8bbffc1c70d8e13513/332620.jpg"
+ },
+ "69C34933FD556CEF": {
+  "name": "SH Enhanced Combat Effects",
+  "desc": "Enhanced Combat Effects transforms the battlefield with a complete overhaul of Reforger's visual effects, delivering a gritty, immersive experience designed for ultra hardcore players.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/09dd/7aafb7519fa6ba97c2b6b500686b385d15a234b97c46f213e6a6187cd682/27474.jpg"
+ },
+ "660896EB172D4B7F": {
+  "name": "Improved Blood Effect Deluxe",
+  "desc": "This mod makes the \"Improved Blood Effect\" mod more immersive with new textures and tweaks.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/fe6e/2d77aa67df02d3dc0848f25257f0ad52cf5e9c28adf266a1cf310691670e/118925.jpg"
+ },
+ "6A6147A51031043F": {
+  "name": "KeepBleedingOnCorpses",
+  "desc": "Test - Keep corpses bleeding when shooting at us",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/462e/b19d4425de3795183819c1df8cfada6501c3871d222a5c9a400c2dcc8c29/296687.jpg"
+ },
+ "6852F7A1594BAC3A": {
+  "name": "Immersive Explosives",
+  "desc": "A mod designed to make the particle effects of the lauchers (and their various ammo types) have a little bit more explosive immersion.\n\nAnd to help scratch that itch...",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/42cd/c23a093ac39ebe19125bb6c87694f7af9da529ed5ecc6b468b45e67a087e/212437.jpg"
+ },
+ "59BA048FA618471A": {
+  "name": "Shrapnel 2.1",
+  "desc": "Adds realistic physical shrapnel to all explosive.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/d6ae/80bdf849d004a347ede92ddf5d6fe9c28e62bfce48037989f4bf2cfff7a5/283013.jpg"
+ },
+ "6A6412A79171026B": {
+  "name": "Congos Crew Comms",
+  "desc": "Universal vehicle intercom and two shared radios. Clear crew chat in any camera mode. All occupants can hear vehicle radios; drivers, commanders and gunners can transmit. Zero setup.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/fab5/8690c16125e73ab37a03ca0d057276ff99561f1e87e853b562d5a0abb1e0/260506.jpg"
+ },
+ "6A273E0A8061B51B": {
+  "name": "Congos Dynamic Lights",
+  "desc": "A small addon I threw together adding full day/night functionality to Reforgers forgotten interior lights. Plug and Play on any map using vanilla light fixtures",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/28d9/c81566296ee508ea1f8e25b1a235a0175f4b2709e8a8f86aebbe91c4a631/244898.jpg"
+ },
+ "6A6462CA3821E2AF": {
+  "name": "Wonkas Re-light",
+  "desc": "4000k white light for most vanilla light fixtures",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/93a5/3b4bfb3b4fc7694d29cf1caea0e56c19a779b474c4bb46b02f223597f524/221010.jpg"
+ },
+ "69D4B8A05C764676": {
+  "name": "Death sound effect",
+  "desc": "Death sound effect. Vanilla just makes small umfs when hit. This adds voice effects when the character is killed\n13 different audio effects",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/145d/bb133fc5083fe1cc5150a962b16c1f86704433c0b1c15baf6c379e471f64/153843.jpg"
+ },
+ "66FAF6113997388F": {
+  "name": "More Brutal Voices",
+  "desc": "More brutal voices.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/339f/60a3aabf31b14303dbfcff03c01bcb0c35750078d34e5a494435def7ad10/41427.jpg"
+ },
+ "69493AAB5216A58E": {
+  "name": "Northcom Ambient Voices",
+  "desc": "NPCs now make sounds such as coughing, whistling, humming, voice lines, and more.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/db75/ad608d6417f5ece68d4a89264342ce866cf3b07d5dc3525ca6422b9afb40/108441.jpg"
+ },
+ "631B695913C7781F": {
+  "name": "Realism Overhaul - Sounds",
+  "desc": "Part of the Realism Overhaul mod collection.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/39db/182e025240a20a63786c356928e6f0071d1c6c60291e6af41e3159bba33c/100364.jpg"
+ },
+ "64DE57C0A1601D14": {
+  "name": "Lunacy Audio",
+  "desc": "Warfare audio experience overhaul.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/313a/480ebfedad254c0c3f52fcb1f55404fa67f5e4ec5cd5b27928dc4040df71/172776.jpg"
+ },
+ "687CD5AF7A229911": {
+  "name": "better bullet crack sound",
+  "desc": "addon for lunacy mod",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/a345/c6ed13b79359ba27ee7ec7e9db03b47b09a7192ccbb8f2818fb8c75205e7/246883.jpg"
+ },
+ "691B466D9B779E10": {
+  "name": "GTG Dynamic Voice Range",
+  "desc": "Control the range of your voice in real-time — from whispering to shouting.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/bb34/1656a9339c605549f0b4a6e1b84d0899ef90d6c0b47ce95064bb9704eb74/51938.jpg"
+ },
+ "613B4DD4A91CA144": {
+  "name": "LM Suppression",
+  "desc": "A realism mod allowing players to be suppressed by projectiles and explosives.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/9a57/acfbed62496898a94d786f96184414f190dd8dce9b77b741cf9d6be34a99/20931.jpg"
+ },
+ "66BA18A93EC2C13D": {
+  "name": "CMU fix driving and brakes",
+  "desc": "Enhanced Transmission and Braking repairs \n\nEvery change corrects vanilla configuration bugs for authentic, realistic performance—no overhauls, just fixes that restore intended specs.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/5005/3a62156292c7bd51b682be27248663f1c1aacf462d5e562d8d1aea958cc6/138170.jpg"
+ },
+ "6A230CAA48776988": {
+  "name": "Faster Vehicle Swim Speed",
+  "desc": "Gives all vanilla amphibious vehicles a minorly improved blanket swim speed.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/a53d/5f30eec65dd2af2b22933ce1e2427fad23804129e24a0b096366c4a9c210/313413.jpg"
+ },
+ "6A1509A869C10588": {
+  "name": "Light Vehicle Realism Tweak",
+  "desc": "Simple tweak to all military light utility vehicles and gun carriers to make them more realistic",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/6711/657da0f2dd686ea90db815faf10230f3e64eb8a84b5fa3ac585621698502/154361.jpg"
+ },
+ "69D766867427AC14": {
+  "name": "Heavy Vehicles Realism Tweak",
+  "desc": "Simple overhaul to heavy vehicles driving characteristics, fixing their uphill performances to match their real incline climbing capability.\n\nCurrently reworked:\n\nM923A1\nUral 4320\nBTR-70\nLAV-25",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/0f39/038a239a529af07577db03522416e30d97732f34dbc7287f166e8ad4957b/79715.jpg"
+ },
+ "6946021B7234447F": {
+  "name": "Immersive Mirrors & Periscopes",
+  "desc": "Immersive Mirrors & Periscopes adds... Mirrors and Periscopes",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/17f9/b0f358e8665242d17d288cc36dc1069051bd4d36678d90e555a867dd5c68/37295.jpg"
+ },
+ "698B2BDEB6268D21": {
+  "name": "SHS Fly_Drive-by -Dev",
+  "desc": "SHS Fly-drive-by",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/988b/520ddfcc5540df43385ae13021e92987ae256d6e091b6582ba52d4f6fabb/86340.jpg"
+ },
+ "6A44A2A33C9FBFCF": {
+  "name": "Aircraft carrier Kuznetsov",
+  "desc": "Work in progress",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/bf7a/e1972d888a0e305aa463a5c1d3e1810ce147d965d72f5fae988bbe06f843/65075.jpg"
+ },
+ "69389797227E64A8": {
+  "name": "C-130J Super Hercules",
+  "desc": "The C130J Super Hercules for Arma Reforger. A flyable, multiplayer-ready transport aircraft with a custom flight model, an accurate cockpit, and a fully walkable interior.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/f508/6f4ddc1ba9afae4ac0bce1e78905e18519dceedee48a46714866ffe724f2/109515.jpg"
+ },
+ "69B3187B018F297E": {
+  "name": "A-10 Thunderbolt II by Awenzj",
+  "desc": "A10 go brrrr",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/5727/dbad43ea4de0fb40f87f1062c2d0ef936b1df4c1121374e497ffb151612f/233117.jpg"
+ },
+ "6618D00B1C61A18A": {
+  "name": "CIE T72B",
+  "desc": "The T-72 is a family of Soviet main battle tanks that entered production in 1973. The T-72 was a development based on the T-64 using thought and design of the previous Object 167M.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/f537/ef83819cccabb7f6c0ed0a459ea01c3ef7367699f2eb0a644e8e0a38b95f/123663.jpg"
+ },
+ "6273146ADFE8241D": {
+  "name": "WCS_AH-6M",
+  "desc": "AH6M Littlebird",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/6e09/976a11a0c67101c9a77297424455b4a425e6fb5375c52cd22bc348b19bc0/86020.jpg"
+ },
+ "665845C43FB3DA78": {
+  "name": "Medevac AH-6M Littlebird",
+  "desc": "medevac littlebird, fully functional\n80 supply cargo\nMedical arsenal\nno medic seat",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/52a8/ffed0f0c3a4c1d741f87b0136227ef27fe83d9bb354b7924119248ea33c0/437978.jpg"
+ },
+ "69AA4AF22BF19E32": {
+  "name": "Vanilla Cargo Helicopters",
+  "desc": "Removes passenger seating for cargo space",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/334d/bab32eecb3f7550198df44f77e983e399a0817c806975fff01d3009dc53e/494631.jpg"
+ },
+ "A4C130F501208020": {
+  "name": "Fire Support System",
+  "desc": "Call in devastating off-map AC-130 fire support with precision cannon fire, heavy 105mm strikes, laser targeting, multiplayer-safe execution, and configurable permissions.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/6467/22a10c92f5f16e5a470922e39e9d933fafc94b8539fc0dbbfcc4e4420919/242329.jpg"
+ },
+ "6A313633B887CAF1": {
+  "name": "Resupply Ammunition Crates",
+  "desc": "This mod adds man portable boxes designed for authentic, boots‑on‑the‑ground logistics. Each crate carries a load of magazines, belts, grenades, and mortar shells.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/fd47/4cadfcd268fc896543b5c2dc3e8b1d5afeb3946d70ac7bdd3f7304a49b20/120198.jpg"
+ },
+ "69AB4D129CDAB96C": {
+  "name": "Cargo Delivery System",
+  "desc": "This is First release. Still is a WIP\n\nLooking for feedback\nDiscord: https://discord.gg/GU6X9PhHCQ",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/3498/7708358d061900180881204c834a3515f7111b996c702fb8e2753bd75fb2/292852.jpg"
+ },
+ "5994614FB5AD35C2": {
+  "name": "RHIB",
+  "desc": "Adds the 11M Naval Special Warfare Rigid Hull Inflatable Boat to the game",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/ae45/273997812bf1b459f12ce0ef9eaaf4151d53af0c240e39b220c0a0132c53/202621.jpg"
+ },
+ "6A22F33063C50060": {
+  "name": "Additional FIA Vehicles",
+  "desc": "Adds more vanilla vehicle options for the FIA",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/4222/cd18c2752441d5d3f5e7b9bc48d21ed6583bf0f7408a486a6237fa70a1b7/313823.jpg"
+ },
+ "65BB2D0679BCA058": {
+  "name": "Skyhook",
+  "desc": "A functional proof of concept helicopter slingload system for Arma Reforger! Attach, transport, and deploy light vehicles, crates, and supplies with physics, rope visuals, and gameplay mechanics.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/4483/e20a528f21518d8fd9e296f0639c1c48937c486ccd4811a8a82d57b0c9de/61258.jpg"
+ },
+ "66CEE57905C53828": {
+  "name": "Hawks Improved LAV",
+  "desc": "Improved LAV",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/4fd3/d6f8672aff9108f4b994279d60337645ba9aa00689c7f9124e628fd9d847/108198.jpg"
+ },
+ "6A3A685E290CCFE9": {
+  "name": "LAV-25A2ish HAZARD",
+  "desc": "Something for milsim",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/9104/6d9c9b643acc059a63adcd32b72403c7c9815ef0a5f71a015c5e33d6135c/263448.jpg"
+ },
+ "6659622FA432A13D": {
+  "name": "Used Civilian Vehicles",
+  "desc": "Retextured to achieve a dirty and used appearance.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/35c7/af002f77a8e28a80c70691f6d02858632793eb4b925ea32308bd43bbcf1f/467594.jpg"
+ },
+ "6A3D6451B9E12FE5": {
+  "name": "Zu-23 BTR",
+  "desc": "BTR‑70 fitted with a Zu‑23 and covered in improvised foliage, built for stealthy forest ambushes and mobile fire support.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/4796/10b040b2ce6d79672c568ac6f249d6f220b192485f9e7fdb6e5f4170ff97/417125.jpg"
+ },
+ "667771246E11136D": {
+  "name": "Bigger Mortars by Tonnie",
+  "desc": "Bigger Mortars makes all mortar rounds feel truly devastating. Explosions are louder, smoke plumes tower higher, and the blast radius finally matches the fear factor mortars deserve.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/69a7/b291d88fe6bbbe6571f9a8412698e969019571ed5483bef8bdb23ed66183/117455.jpg"
+ },
+ "6A3C921F7471A901": {
+  "name": "Retro Night Vision Tweak",
+  "desc": "Disables remaining modern attachments (rail bipod, helmet, IR strobe)",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/a76a/a3a0bf040f60c27b059af7dce680738dea3081cef1c53bed8a61e0d2840e/51778.jpg"
+ },
+ "65F93D3655B7D63C": {
+  "name": "Northcom - Retro Night Vision",
+  "desc": "Adds 1980s Night Vision goggles for the US and USSR",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/449b/818e8799ef7990aad129352f07f70db2492be549bfb3826c1fd2d1ae77e1/44333.jpg"
+ },
+ "687177B0CF18E682": {
+  "name": "Add Northcom Retro NVGs To FIA",
+  "desc": "Adds the excellent Northcom - Retro Night Vision goggles to the FIA arsenal.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/b052/4586cf51fd63c4aa2d936c043b0a9f0c3e203500ce376213925b70a03d9b/74066.jpg"
+ },
+ "66C55A9954C7F513": {
+  "name": "Northcom Generic Balaclavas",
+  "desc": "3 Generic black balaclavas",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/a5eb/421ce17376077186056bfa07a63de9b84c467f2192fdde07ea0db27ce019/107195.jpg"
+ },
+ "6858EC86812228AE": {
+  "name": "IBA Vest",
+  "desc": "Adds interceptor body armor vests and MOLLE II pouches sets to use with.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/6a49/af54e81bfb7c4e50483246abfaf29d5623a91f3691ff75307b3a8bb8d865/94056.jpg"
+ },
+ "69510D60CD88D7E2": {
+  "name": "Fingerless Leather Gloves",
+  "desc": "Adds leather fingerless leather gloves to all factions\nCredits: ComradeBear",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/224e/d682c49b409b5d42fba127f2ab2c775a7251a51b94c1b78cd9e5b00c275a/137411.jpg"
+ },
+ "606B100247F5C709": {
+  "name": "Bacon Loadout Editor",
+  "desc": "Editor to customize Bacon M4 Block II and URG-I",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/2e19/266c70094ce9a4542dae32395eaaad34cf5aa057fdceeab6cbdfadf64f0b/37282.jpg"
+ },
+ "61D57616CAFBB23D": {
+  "name": "WCS_LoadoutEditor",
+  "desc": "A custom loadout editor that provides players with a personalized arsenal and gear selection system for the WCS servers.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/0128/eeecf5eaee46e6281174467e3320ff1b3659c14cdf25e6dd150f06e876ad/89243.jpg"
+ },
+ "66C751946DC58A1A": {
+  "name": "All Arsenal Items To Private",
+  "desc": "✅ All Arsenal Items To Private\nNo more rank locks. No more MSAR. Full freedom… except for vehicles.\nDiscord: https://discord.gg/k5fSDDsa2K",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/c4ff/b32922ceb6150d71bad1de06f654440f2b4c71b082dc61f3214795fc7289/119068.jpg"
+ },
+ "69BD353739FCCA62": {
+  "name": "C3POsKillCam",
+  "desc": "A simple KillCam Mod (BF Style)",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/b6da/5bea971fbca867b1c4fdbdf464ecb00b767b894593f863df1ad7d7a24e97/173480.jpg"
+ },
+ "6614B4EBC1A63458": {
+  "name": "ARMA-RY CORE",
+  "desc": "Core components for ARMA-RY mods: Magazine Wells, Attachment Slots, Ammo Types and more!",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/d49c/48b654eebd7d79cb7abf0edd733331ba6ede7eca7bc4cc7f18ee1ec4b0c7/80692.jpg"
+ },
+ "687CD82F6E41D627": {
+  "name": "Attachment Framework-Core",
+  "desc": "Core of Attachment-Framework containing only scripts and needed configs to start creating custom attachments, modular helmets and use other systems of AFW.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/5280/1e7754ef22850d78f2ad777f693ed13944169d34246d47f224ddb3b40b78/47816.jpg"
+ },
+ "645F08FA9E7CDEDE": {
+  "name": "Attachment Framework",
+  "desc": "Modder Framework for making flashlights and lasers\n\nJust add as a dependancy and go to work, some examples are included to get you started!",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/5280/1e7754ef22850d78f2ad777f693ed13944169d34246d47f224ddb3b40b78/47816.jpg"
+ },
+ "62CCD69DD17E4F2F": {
+  "name": "AKI_Core",
+  "desc": "Core Mod for AkiraSeki",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/00d5/7018752ab7c8584a76c98794898696b002803ec9c415decfa3b21f913594/76256.jpg"
+ },
+ "6052A9DD45564825": {
+  "name": "You can sit",
+  "desc": "For fans of Milsim and RP from me with love <3",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/3d62/0e4e3fdfaba5e416579f46abd21fb34ab83423f0b285fb4394be36a05f4e/201203.jpg"
+ },
+ "62F364B35E9B51B0": {
+  "name": "Wirecutters 2",
+  "desc": "The sequel to the classic",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/53ab/13a27bbba5de5c20f64b4f74050d050aa6fb3c1e3d1990a7e3c56bce6e14/142336.jpg"
+ },
+ "672EE3CC8A605F28": {
+  "name": "Hold Your Breath",
+  "desc": "Allows you to hold your breath while aiming down sight",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/7149/8a635edab781e650c8e8bc531d04ffddc3bcb0c7cc32acb3d963196763f9/286293.jpg"
+ },
+ "61ECB5EFAA346151": {
+  "name": "TacticalAnimationOverhaul TEST",
+  "desc": "Overhauls weapon animations and adds new combat mechanics like blind fire, high ready, and weapon canting. Actively developed.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/c9b4/b5d5c1cbd23a7d5f642a4e9803a6c42093af7a74d295a3c16a6accab166c/441248.jpg"
+ },
+ "59EAA899751805DF": {
+  "name": "Stun Grenade",
+  "desc": "Stun grenade concept test - affects players and AI. Available in all arsenals.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/8f57/c514c5c18cdbaa35c26de37a0ef540bc83177f29e98a232b9ccec4eae84f/16836.jpg"
+ },
+ "6E8B92F4A1C7053E": {
+  "name": "Tactical Ladder by PRONEDROG",
+  "desc": "A complete overhaul of the tactical ladder featuring realistic physics, smooth procedural extension, and safety fixes.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/f2fa/8a7a2051b8833db043fe5182c83da813c38be55643ba4d7f7a8d2bb17872/27317.jpg"
+ },
+ "69156B5B321244C9": {
+  "name": "Physics Rope",
+  "desc": "Physics Rope Component\nA scriptable Verlet physics rope for Arma Reforger. Fully networked runs simulation on authority and syncs to all clients automatically.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/4c66/1135a33e1b60c50b89f3b9a9921f27c452c4fa2bc7cb938e090ab0984dbf/74149.jpg"
+ },
+ "6952B5DF43C6B720": {
+  "name": "EE_Heli_Enhanced_AH6M",
+  "desc": "Add FRIES made by \"WhoaItsLouie\". Add to AI helicopters and player helicopters.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/3c4c/ed63fcba531e33b7a12e9c9da779767923737d30a00056b7a668f372973a/259333.jpg"
+ },
+ "68996556700D5CA1": {
+  "name": "Prontos Parachutes",
+  "desc": "Adds a fully functional T-10 Static Line Parachute to Arma Reforger, designed for realistic airborne operations, MilSim communities, and tactical gameplay.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/45d6/96c58a90d78506fbdc1cb980a64235227d1959db89223ac5837a81a917fa/351369.jpg"
+ },
+ "68D53E2C3E3F4436": {
+  "name": "BFS - Rappel Reforged",
+  "desc": "Black Forge Studios Presents: Rappel Reforged\nAllowing players to rappel from elevated positions such as rooftops, towers, and other structures using rappel anchors",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/4b05/eba18b252fc5938dc41bd06cc09e71e63e0504f8409deadb2cae76b3ea86/236730.jpg"
+ },
+ "6586079789278413": {
+  "name": "ACE Medical Core Dev",
+  "desc": "Provides a more realistic medical system.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/ac03/61b4621904fd7060f5662e106867a0ebef28b2858f3a46f85aea10520195/14313.jpg"
+ },
+ "65AD7C249E4ECDFB": {
+  "name": "ACE Captives Dev",
+  "desc": "Adds the ability to surrender and adds zip cuffs to arsenal, which can be used to take a surrendered unit as captive.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/ac03/61b4621904fd7060f5662e106867a0ebef28b2858f3a46f85aea10520195/14313.jpg"
+ },
+ "65AD7C379CBD394D": {
+  "name": "ACE Carrying Dev",
+  "desc": "This adds the option to carry incapacitated units.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/ac03/61b4621904fd7060f5662e106867a0ebef28b2858f3a46f85aea10520195/14313.jpg"
+ },
+ "65AD7D4F994EA327": {
+  "name": "ACE Medical Circulation Dev",
+  "desc": "Adds cardiovascular system and advanced medication.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/ac03/61b4621904fd7060f5662e106867a0ebef28b2858f3a46f85aea10520195/14313.jpg"
+ },
+ "65B343F799FB521B": {
+  "name": "ACE Medical Hitzones Dev",
+  "desc": "Overhauls and adds new hit zones.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/ac03/61b4621904fd7060f5662e106867a0ebef28b2858f3a46f85aea10520195/14313.jpg"
+ },
+ "69EEFDE8E767408F": {
+  "name": "Jam It By LongJohns0",
+  "desc": "Have you ever been in a gunfight and been like \"dam id hate if my gun jammed right now\" well now thats a real possibility.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/5bcc/379355153512ccfac6f572ed369a4e9fed4932ccf503dde735f922f249f4/40323.jpg"
+ },
+ "688F21E01C00D8BC": {
+  "name": "ACE Dev Demand Surrender",
+  "desc": "Demand Surrender from AI",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/3c2c/45b88c24991680aaa27b8dd9240664d557cba6de87bb28ee43a15ae87e56/432004.jpg"
+ },
+ "69D2CBB99E2BFEC9": {
+  "name": "Placeable AI Convoy Routes",
+  "desc": "Hand-drawn AI convoys. Place route points along any road, drop a controller, and a column drives it in formation: proper spacing, sensible corner speeds, optional stop points.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/4d5d/07a2b2f1da408cbb566a25c849338eafbfbf5bc4bcd6c4570eba948e215a/118727.jpg"
+ },
+ "6A1452C1F639412C": {
+  "name": "Ci5 Civilians Stand Alone",
+  "desc": "Adds dynamic civilian life to Arma Reforger with pedestrians, moving traffic and parked vehicles. Fully standalone — no Ci5 Framework required.\ndiscord.gg/Ci5",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/bb5e/3ae28b0e0d30ffb189e0dcb4654e1d7283d247ccec7aa1c5ef772944a796/306904.jpg"
+ },
+ "6A50E40BA3B94B06": {
+  "name": "Milsim Creator Framework - AI",
+  "desc": "Shout at the AI and they weigh it up. Those who give in can be restrained,\nmarched, driven back to base and questioned. Trust and fear decide what any\ncharacter in the game will tell you.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/392d/d0a11edd23dc094db5d1cd4235965984d7d696c25b75ea6ea8d9d0a71c75/87146.jpg"
+ },
+ "6A1D17D963913205": {
+  "name": "FIA Militia Overhaul 2 Civ Exp",
+  "desc": "Adds in even more variants to the FIA Militia Overhaul 2 mod! Primarily taking clothing from Civilians Expanded 2 as well as Bandit Gear",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/6ca2/680956462a0db504dfdd63629fc2e0978fc93ca8cab5952c8e62228c1fcb/400810.jpg"
+ },
+ "6964F6F6E73913AC": {
+  "name": "Better USSR",
+  "desc": "USSR overhaul and improvement mod\nVanilla Friendly",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/74eb/b359941d5c4ab100fca8b2bd2aa46bc3a6c697ea0af75c9452dd3e168efd/208196.jpg"
+ },
+ "66D62AC2567ECCC6": {
+  "name": "Northcom Warsaw Pact Assets",
+  "desc": "Assets for Northcom Warsaw Pact mods, only a dependency, does nothing on its own.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/54ab/c8caabc0302f90cae55f43bc7116352293b8759fc78242762dd38d91acda/178176.jpg"
+ },
+ "69F416B0709142DA": {
+  "name": "Vanilla US Rangers and SF",
+  "desc": "Working on some Vanilla ranger clothing along with SF apparel  using Dogs Gear for the patrol cap and berets.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/4cb3/249e9dd5e3988398e26d0c1dd55c689364a247785d341d1cb52711c77a10/160690.jpg"
+ },
+ "597491A7AFEE471B": {
+  "name": "dog_Gear",
+  "desc": "A collection of US Military gear.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/MlnQ/I41bu8ulnb__4OnI1_wTMNRrM_GgdWM6ycF3Jbs/196634.jpg"
+ },
+ "69F155927D6AA0C0": {
+  "name": "Dogs Revival",
+  "desc": "Bringing some of the content created by TheDog#9697 out of hiding.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/5481/5d976a03b373cba389fe843ca4182f34284ed74f3e0f23367163b6e5b493/52422.jpg"
+ },
+ "668F458EC133AE50": {
+  "name": "ARMA-RY UZI",
+  "desc": "The stamped metal, open bolt 9mm submachine gun.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/0731/ae5d4ad8de986e46c2fd4bb3c54a1d16aca04305de17011a7e1853aabfe8/65194.jpg"
+ },
+ "66873087C05E787C": {
+  "name": "ARMA-RY M3A1 GREASE GUN",
+  "desc": "The industrial, American designed .45ACP US submachine gun.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/ced3/df37826ddf07885607a4e18f446dec1c9b03fb3f980b98504472c92d87f1/123612.jpg"
+ },
+ "669EFCE1C4C6C864": {
+  "name": "ARMA-RY AK47 ASSAULT RIFLE",
+  "desc": "The iconic 7.62mm Soviet assault rifle.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/4552/57cc78c5cea8bfa6e1c9ac921c2ac2ba13f32315f8d96f9409f3935065dd/165438.jpg"
+ },
+ "666ADD0DDD59F6E7": {
+  "name": "ARMA-RY AK74 ASSAULT RIFLE",
+  "desc": "Late cold war variants of the iconic 5.45mm Soviet assault rifle.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/33be/b0cec5fd5e5ed9eaa038be3b5388175a42d19f06b3109bc97a5559f98db2/128155.jpg"
+ },
+ "6614BD8AC622B696": {
+  "name": "ARMA-RY G3 MODERNISED",
+  "desc": "Modernised variants of the iconic 7.62mm NATO battle rifle.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/2ade/b5902ef8fa6b37b0b897b93aecc2ebd0bbe080b5a444db255603c12ebcfc/121032.jpg"
+ },
+ "6614BC5EC4E1675B": {
+  "name": "ARMA-RY CLAW MOUNT",
+  "desc": "Optics for G3 and similar rifles.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/f9df/77e65f00c8d612b842e1d64698312397acbe14597e496e4f28dcc680fc8f/71538.jpg"
+ },
+ "67153CD5DC771D42": {
+  "name": "ARMA-RY SOVIET OPTICS",
+  "desc": "A selection of classic soviet weapon optics and attachments.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/aea8/6bd7a01f0afb2da91a9bd63afdcae1e16d770096e1d7b9b29d3d898970dd/168667.jpg"
+ },
+ "629B2BA37EFFD577": {
+  "name": "WCS_Armaments",
+  "desc": "The WCS Armament addon introduces a robust weapon system for vehicles in Arma Reforger.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/c492/edd42c530a1d5af05547e3687ae34eeee950e3a2dd88530d46f891806164/88728.jpg"
+ },
+ "5EE53EC5CB7F6158": {
+  "name": "PM-t",
+  "desc": "PM with drummag and suppressor\n2 version single shot and 3 burst",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/NgtB/2g63vIS0N2lYTVm9WqW54lOJUYV2YJrjbbqtt2M/252211.jpg"
+ },
+ "64952D9A7E4D3A3F": {
+  "name": "Pistol M9 SD",
+  "desc": "Adds a suppressor attachment slot to the M9 Pistol.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/f0a9/7ec1dc127e26a0da70feae2478912a28b2bc0f5152a72f88f2fa39f4e036/137390.jpg"
+ },
+ "6728865D648BB916": {
+  "name": "Sunshines TIMS",
+  "desc": "PART ONE of Sunshine's Tactical Infantry Movement System (TIMS) for an authentic, meaningful infantry combat experience.\n\nPART TWO: search \"Sunshines TIGMS\".\n\nI highly recommend part two.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/fd80/91eb4fca180035c1df3b88421f43a73d90a5f6054ef3281526fb24c0aa94/219855.jpg"
+ },
+ "672B02D564E1B772": {
+  "name": "Sunshines TIGMS",
+  "desc": "THIS IS PART TWO: Sunshine's Infantry Gun Movement Systems (TIGMS) for meaningful choices in selecting your weapon ready-state & more.\n\nPART ONE: search \"Sunshines TIMS\".\n\nI highly recommend both.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/6663/8e95d759c3085b5018cd7d8c8c58ef300f34f505e5b2222531a9126b2228/200646.jpg"
+ },
+ "688B3030DFC4730E": {
+  "name": "Eye Relief",
+  "desc": "Changes eye relief/auto exposure for better looking interiors and easier visibility through windows.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/2ef0/05d2b31b4685d7d13388e20e513814b4db1524a6cabfc5bdbfac23e05ac2/179965.jpg"
+ },
+ "66D743AE865D843E": {
+  "name": "Only Launchers 2nd Slot",
+  "desc": "Modify base character to use only launchers at the second slot.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/ca2a/afe6edfdbd625f8176e821471c9fca1d6cc7af93a86a862c9e6f135b8091/369790.jpg"
+ },
+ "646139033F5805AD": {
+  "name": "Realism Overhaul - Ballistics",
+  "desc": "Part of the Realism Overhaul mod collection.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/39db/182e025240a20a63786c356928e6f0071d1c6c60291e6af41e3159bba33c/100364.jpg"
+ },
+ "6A14E4F10EA40001": {
+  "name": "LG_EarPlugs",
+  "desc": "F2 earplugs for LuckyGames Hardcore",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/9adc/45101b361c8cea4dc1988602cea7b628b19a2c65780d4b68eaa5414ce8d4/175417.jpg"
+ },
+ "6A20F08BD708B321": {
+  "name": "IED OED",
+  "desc": "Valise IEOD interactive et configurable pour Game Master, avec compte à rebours et système de désamorçage par code.\nhttps://discord.gg/GVgxDHe3wt",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/8ad9/e9456d0bf6d9c00f70a0495b930817d202564af9f67e89dffc9d0267b96d/219344.jpg"
+ },
+ "6A522AA68A58848B": {
+  "name": "Commando Hubert - CQB",
+  "desc": "Huit structures CQB pour Game Master : bâtiments et escaliers, intérieurs sans mobilier, portes interactives et coursives d’observation. Créez votre camp d’entraînement militaire.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/838c/99c2a0b09c57edd3be82eb8d669c2a8bb7ddc187c46c8e984cbf2a1838c2/169047.jpg"
+ },
+ "8F41C2D6A93B1135": {
+  "name": "JXPLoadoutEditor",
+  "desc": "Made by ICR",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/0fe5/ecb4e90cda52e73ece92695d963370c353ef36c1df0a99593d6a2cb75b28/120046.jpg"
+ },
+ "668D4E5839894782": {
+  "name": "Fastroping",
+  "desc": "Fastroping system for Huey and Hip",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/0d3e/10cbe1826c9f79f52c37391cf8592c16f93861dda02d2c6b31ce4d9f9589/226595.jpg"
+ },
+ "696EABC620F5193C": {
+  "name": "Flight Warning Systems",
+  "desc": "There are still sounds missing and HTWAS is still WIP!\nPlease write me on Discord justaguy4465 for constructive criticsm or help",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/8c82/c61ca6baa2a7a7cfae7c9203b38ebbfe766f4d92f8f72dd56366efa70905/99749.jpg"
+ },
+ "671B4B88A1397B9D": {
+  "name": "bonz_UnitLoadout",
+  "desc": "This is the Bonz Characters Unit Loadout.\nIt enables an admin or a GM to set a loadout on dummy units. Where players can come and get them with just one click.\nWIP - Use at your own risk.\nHycann - 14e",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/3dab/1991eec45b87f1aa91f301b92c9f2517b9c50ade16626c9b6ae92d559c1b/111232.jpg"
+ },
+ "697F1A0DDFB0CCF5": {
+  "name": "Thomoskis Med Kit Fix for ACE",
+  "desc": "Returns med kits to simple containers instead of mobile arsenals & adds ACE Medical Breathing items",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/bd80/766296360a90f0fe55431986f11d94ae3ac74e6ae524986995c67ac9a5e8/23984.jpg"
+ },
+ "6870B508C9DBE2C3": {
+  "name": "Proper Berets",
+  "desc": "Proper Berets adds high-quality, realistic military berets to Arma Reforger, featuring Ranger, Special Forces, Airborne, and Command styles with authentic colors and insignia.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/7ff1/cd024a95b4dee5632fc945f6231da364c59911ac6b02974143154a90ed5c/253895.jpg"
+ },
+ "68605B2C1FFB94CA": {
+  "name": "Sinsin Operator Beards",
+  "desc": "An operator beard mod for Arma Reforger with realistic facial hair.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/f0b4/5a9d46c924f56ec3b6e658d62faadf675aa935cb13c6d824f544da4b0806/298526.jpg"
+ },
+ "685EE86810996203": {
+  "name": "Sinsin Glasses Pack",
+  "desc": "An eyewear pack for Arma Reforger",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/711a/5f7365294147df285c7dfcef52411df1cda73a4c5057d44b8d3dad469f95/78715.jpg"
+ },
+ "6A506D37ED4A2A44": {
+  "name": "Vanilla Police",
+  "desc": "Adds vanilla-friendly police.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/a4d1/f5070d6860265f7e6c12963f25fef0d84b11c0876cbd5a56d21c27abae9c/188118.jpg"
+ },
+ "61B84088181A8FA4": {
+  "name": "Motorbike",
+  "desc": "98cc motorcycle.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/702f/d3a5c1dfb676f112f817608822b07c0f8cd8f8121aa8ba63ee6e2d224478/115895.jpg"
+ },
+ "6A2CD5B6A7D055BC": {
+  "name": "Human Focus",
+  "desc": "Human Focus gives the zoom a cost. It becomes weaker when the player moves, looks to the side, or is tired, and it follows the pace of the player instead of switching.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/0cbb/3a6a07605551ea77a7b4a5147c1c66d1987c165da9f1c07ea2e02146cb24/422457.jpg"
+ },
+ "68C6D7CC12CAFD91": {
+  "name": "Ana",
+  "desc": "female character",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/a7d1/1104a1988a5c8b79f005d9f0d73f00997e171a7abf1d77190cfc7e8f7a9a/43633.jpg"
+ },
+ "69E8B0D1CA7E6001": {
+  "name": "LG_BodyCam",
+  "desc": "Ctrl + C",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/e103/0db41e0441362d3cb2f832b5c45894d439316afe40feb7d9357d7c2dcf3e/19184.jpg"
+ },
+ "6A2D225741ADFDB4": {
+  "name": "Thermal Profile Fix",
+  "desc": "I found this workaround completely by accident while testing another mod.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/015c/9c702ac6b32f6bab6daa9e2d3eb6404035cd387f26e394a4c691aad3fd12/566589.jpg"
+ },
+ "6614B1FAE9694F8B": {
+  "name": "ARMA-RY SHOOTING RANGE",
+  "desc": "A shooting range for trying out ARMA-RY and vanilla weapons, with custom steel targets and weapon lockers.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/0f03/3345bdca2966985055e74bbf07dd9390abd260f3b9107bfbe52c4878513c/77862.jpg"
+ }
+}
