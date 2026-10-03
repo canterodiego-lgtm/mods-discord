@@ -1,1 +1,64 @@
+name: Publicar mods en Discord
 
+on:
+  schedule:
+    - cron: "*/30 * * * *"        # cada 30 minutos (hora UTC, da igual)
+  workflow_dispatch:               # boton "Run workflow" para correrlo a mano
+    inputs:
+      forzar:
+        description: "Publicar aunque no haya cambios"
+        type: boolean
+        default: false
+  push:                            # al editar estos archivos, publica enseguida
+    paths:
+      - "categorias.json"
+      - "descripciones.json"
+      - "publicar_mods.py"
+
+permissions:
+  contents: write                  # necesario para guardar el estado
+
+concurrency:
+  group: publicar-mods             # evita que dos corridas se pisen
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar requests
+        run: pip install requests
+
+      - name: Publicar mods
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          PANEL_URL: ${{ secrets.PANEL_URL }}
+          PANEL_SERVER: ${{ secrets.PANEL_SERVER }}
+          PANEL_API_KEY: ${{ secrets.PANEL_API_KEY }}
+          PANEL_FILE: /config.json
+        run: |
+          if [ "${{ github.event.inputs.forzar }}" = "true" ]; then
+            python publicar_mods.py --force
+          else
+            python publicar_mods.py
+          fi
+
+      - name: Guardar estado
+        if: always()
+        run: |
+          date -u +%F > ultimo_chequeo.txt      # 1 commit por dia: mantiene activo el repositorio
+          git config user.name "mods-bot"
+          git config user.email "mods-bot@users.noreply.github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "Actualizar estado"
+            git pull --rebase
+            git push
+          fi
