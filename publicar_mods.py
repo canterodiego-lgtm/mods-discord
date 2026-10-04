@@ -24,7 +24,12 @@ ESTILO      = "lista"                # "lista" (compacto) o "tarjetas" (un embed
 WORKSHOP = "https://reforger.armaplatform.com/workshop/"
 HEADERS  = {"User-Agent": "Mozilla/5.0 (mod-list-bot)"}
 COLORS   = [0x5865F2, 0x57F287, 0xFEE75C, 0xEB459E, 0xED4245, 0x3498DB, 0xE67E22, 0x1ABC9C, 0x9B59B6]
-WEBHOOK  = os.environ.get("DISCORD_WEBHOOK")
+def env(name, default=""):
+    """Lee una variable de entorno sin espacios ni saltos de línea (típico error al pegar claves)."""
+    return "".join((os.environ.get(name) or default).split())
+
+
+WEBHOOK  = env("DISCORD_WEBHOOK") or None
 
 LIST_DESC_LEN, CARD_DESC_LEN = 130, 200
 MAX_EMBEDS, MAX_CHARS, MAX_EMBED_DESC = 10, 5500, 3800   # límites de Discord con margen
@@ -41,17 +46,17 @@ def load_json(path, default=None):
 def fetch_config_text():
     """Si hay PANEL_API_KEY lee el config.json desde el panel del hosting (API de Pterodactyl);
     si no, lo lee del archivo local CONFIG_FILE."""
-    key = os.environ.get("PANEL_API_KEY")
+    key = env("PANEL_API_KEY")
     if not key:
         with open(CONFIG_FILE, encoding="utf-8") as f:
             return f.read()
-    base = os.environ.get("PANEL_URL", "").rstrip("/")
-    server = os.environ.get("PANEL_SERVER", "")
+    base = env("PANEL_URL").rstrip("/")
+    server = env("PANEL_SERVER")
     if not base or not server:
         sys.exit("Falta PANEL_URL o PANEL_SERVER (ver publicar_auto.bat)")
     r = requests.get(
         f"{base}/api/client/servers/{server}/files/contents",
-        params={"file": os.environ.get("PANEL_FILE", "/config.json")},
+        params={"file": env("PANEL_FILE", "/config.json")},
         headers={"Authorization": f"Bearer {key}", "Accept": "Application/vnd.pterodactyl.v1+json"},
         timeout=30,
     )
