@@ -68,12 +68,78 @@ def fetch_config_text():
     return r.text
 
 
+def _strip_comments(txt):
+    """Quita comentarios // y /* */ (sin tocar el texto entre comillas)."""
+    out, i, n, in_str = [], 0, len(txt), False
+    while i < n:
+        c = txt[i]
+        if in_str:
+            out.append(c)
+            if c == "\\" and i + 1 < n:
+                out.append(txt[i + 1]); i += 2; continue
+            if c == '"':
+                in_str = False
+            i += 1; continue
+        if c == '"':
+            in_str = True; out.append(c); i += 1; continue
+        if txt.startswith("//", i):
+            j = txt.find("\n", i); i = n if j == -1 else j; continue
+        if txt.startswith("/*", i):
+            j = txt.find("*/", i + 2); i = n if j == -1 else j + 2; continue
+        out.append(c); i += 1
+    return "".join(out)
+
+
+def _strip_trailing_commas(txt):
+    """Quita comas sobrantes antes de } o ] (sin tocar el texto entre comillas)."""
+    out, i, n, in_str = [], 0, len(txt), False
+    while i < n:
+        c = txt[i]
+        if in_str:
+            out.append(c)
+            if c == "\\" and i + 1 < n:
+                out.append(txt[i + 1]); i += 2; continue
+            if c == '"':
+                in_str = False
+            i += 1; continue
+        if c == '"':
+            in_str = True
+        elif c == ",":
+            k = i + 1
+            while k < n and txt[k] in " \t\r\n":
+                k += 1
+            if k < n and txt[k] in "}]":
+                i += 1; continue
+        out.append(c); i += 1
+    return "".join(out)
+
+
+def _mask(line):
+    """Muestra solo la estructura de una línea (llaves, comas, comillas), ocultando el contenido."""
+    return re.sub(r'[^{}\[\],:"/\s]+', "x", line)
+
+
 def parse_mods(txt):
-    """Acepta: lista de mods, config completa del servidor, o el fragmento '"mods": [ ... ],'."""
-    txt = txt.strip().rstrip(",")
+    """Acepta: lista de mods, config completa del servidor, o el fragmento '"mods": [ ... ],'.
+    Tolera comentarios y comas sobrantes. Si no puede leerlo, indica la línea SIN mostrar su contenido."""
+    txt = txt.lstrip("\ufeff").strip().rstrip(",")
     if not txt.startswith(("{", "[")):
         txt = "{" + txt + "}"
-    data = json.loads(txt)
+    try:
+        data = json.loads(txt)
+    except json.JSONDecodeError:
+        try:
+            data = json.loads(_strip_trailing_commas(_strip_comments(txt)))
+            print("Aviso: el config.json tiene comentarios o comas sobrantes; se leyó igual.")
+        except json.JSONDecodeError as e:
+            lines = txt.splitlines()
+            a, b = max(0, e.lineno - 3), min(len(lines), e.lineno + 1)
+            ctx = "\n".join(f"  línea {k + 1}: {_mask(lines[k])}" for k in range(a, b))
+            sys.exit(
+                f"El config.json del panel no es un JSON válido: {e.msg} (línea {e.lineno}, columna {e.colno}).\n"
+                f"Estructura de las líneas cercanas (contenido oculto por seguridad):\n{ctx}\n"
+                f"Abrí ese archivo en el panel y revisá esa línea y la anterior."
+            )
     if isinstance(data, dict):
         data = data.get("mods") or data.get("game", {}).get("mods", [])
     return data
