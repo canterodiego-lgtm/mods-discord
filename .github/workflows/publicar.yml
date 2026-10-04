@@ -2,7 +2,7 @@ name: Publicar mods en Discord
 
 on:
   schedule:
-    - cron: "*/30 * * * *"        # cada 30 minutos (hora UTC, da igual)
+    - cron: "17 9 * * *"          # 1 vez por dia: 09:17 UTC = 06:17 hora de Argentina
   workflow_dispatch:               # boton "Run workflow" para correrlo a mano
     inputs:
       forzar:
