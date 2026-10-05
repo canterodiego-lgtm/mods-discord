@@ -269,6 +269,24 @@ def send(method, url, payload=None):
         return r
 
 
+def read_hash():
+    """Devuelve (huella, hora del último cambio publicado) guardadas en HASH_FILE."""
+    if not os.path.exists(HASH_FILE):
+        return None, None
+    with open(HASH_FILE) as f:
+        parts = f.read().split()
+    sig = parts[0] if parts else None
+    ts = int(parts[1]) if len(parts) > 1 and parts[1].isdigit() else None
+    return sig, ts
+
+
+def make_header(n, last_change=None):
+    h = f"## 📦 Mods del servidor — {n} en total\nÚltima revisión: <t:{int(time.time())}:R>"
+    if last_change:
+        h += f" · Último cambio: <t:{last_change}:f>"
+    return h
+
+
 # ───────────────────────── Main ─────────────────────────
 def main():
     dry, refresh = "--dry" in sys.argv, "--refresh" in sys.argv
@@ -300,7 +318,7 @@ def main():
     # 2) Armar mensajes
     grouped = group_mods(mods, cats)
     batches = make_batches(build_embeds(grouped, cache, descs))
-    header = f"## 📦 Mods del servidor — {len(mods)} en total\nActualizado <t:{int(time.time())}:R>"
+    header = make_header(len(mods), int(time.time()))
 
     if dry:
         for i, b in enumerate(batches, 1):
@@ -312,10 +330,14 @@ def main():
     state = load_json(STATE_FILE, [])
     new_state = []
     sig = hashlib.sha256(json.dumps([len(mods), batches], ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()
-    if state and "--force" not in sys.argv and os.path.exists(HASH_FILE) \
-            and open(HASH_FILE).read().strip() == sig:
-        print(f"{time.strftime('%Y-%m-%d %H:%M')} Sin cambios: no se envía nada.")
-        return
+    old_sig, old_ts = read_hash()
+    if state and "--force" not in sys.argv and old_sig == sig:
+        # Sin cambios: solo se refresca la hora de "Última revisión" (los embeds no se tocan)
+        r = send("PATCH", f"{WEBHOOK}/messages/{state[0]}", {"content": make_header(len(mods), old_ts)})
+        if r.status_code != 404:                      # 404 = borraron el mensaje: se republica abajo
+            msg = "se actualizó la hora de revisión" if r.ok else f"no pude actualizar la hora de revisión ({r.status_code})"
+            print(f"{time.strftime('%Y-%m-%d %H:%M')} Sin cambios: {msg}.")
+            return
 
     def save():
         with open(STATE_FILE, "w") as f:
@@ -338,7 +360,7 @@ def main():
         json.dump(new_state, f)
 
     with open(HASH_FILE, "w") as f:
-        f.write(sig)
+        f.write(f"{sig}\n{int(time.time())}\n")
     print(f"{time.strftime('%Y-%m-%d %H:%M')} ✔ {len(mods)} mods publicados en {len(batches)} mensaje(s)")
 
 
