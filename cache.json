@@ -723,5 +723,10 @@
   "name": "ARMA-RY SHOOTING RANGE",
   "desc": "A shooting range for trying out ARMA-RY and vanilla weapons, with custom steel targets and weapon lockers.",
   "image": "https://ar-gcp-cdn.bistudio.com/image/0f03/3345bdca2966985055e74bbf07dd9390abd260f3b9107bfbe52c4878513c/77862.jpg"
+ },
+ "6647107B7ED20990": {
+  "name": "506IRRU - Custom Name Tags",
+  "desc": "Persistent Name Tags.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/0636/6d75a02d35ecf93659b97494b1486c1118de8b9a97ae03babd6288f1d338/123606.jpg"
  }
 }
