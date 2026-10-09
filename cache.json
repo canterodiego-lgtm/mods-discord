@@ -728,5 +728,10 @@
   "name": "506IRRU - Custom Name Tags",
   "desc": "Persistent Name Tags.",
   "image": "https://ar-gcp-cdn.bistudio.com/image/0636/6d75a02d35ecf93659b97494b1486c1118de8b9a97ae03babd6288f1d338/123606.jpg"
+ },
+ "66824CED506075E9": {
+  "name": "Lightweight Vegetation",
+  "desc": "Lightweight Vegetation is a performance-focused mod for Arma Reforger that optimizes vegetation rendering by adjusting LODs.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/1d9d/9879e3d3e617e1a71488ec9c676f1aabc1c85dabc7b3043436bacafddba7/10219.jpg"
  }
 }
