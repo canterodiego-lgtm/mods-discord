@@ -733,5 +733,15 @@
   "name": "Lightweight Vegetation",
   "desc": "Lightweight Vegetation is a performance-focused mod for Arma Reforger that optimizes vegetation rendering by adjusting LODs.",
   "image": "https://ar-gcp-cdn.bistudio.com/image/1d9d/9879e3d3e617e1a71488ec9c676f1aabc1c85dabc7b3043436bacafddba7/10219.jpg"
+ },
+ "66DC899A1E768FA2": {
+  "name": "Improved Blood Effect Lite",
+  "desc": "This mod makes the \"Improved Blood Effect\" mod more friendly for resource-poor systems.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/015b/b74cfd2aeee3ce18adf00e8aba8489a1345bcd27b02b5296009ab3278fd6/116975.jpg"
+ },
+ "6A7D15D9169B2570": {
+  "name": "PistaLock",
+  "desc": "HUD de aterrizaje y objetivos de entrenamiento para pilotos, controlado por el Game Master.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/c5b8/c40cd93df853adcee2f1a5f924e3c834f80b3120ae14b8799705bf754b9c/147649.jpg"
  }
 }
