@@ -143,5 +143,8 @@
   "6614B4EBC1A63458 | ARMA-RY CORE": "Base necesaria para los mods ARMA-RY.",
   "687CD82F6E41D627 | Attachment Framework-Core": "Núcleo del Attachment Framework.",
   "645F08FA9E7CDEDE | Attachment Framework": "Framework de accesorios para armas.",
-  "62CCD69DD17E4F2F | AKI_Core": "Librería base (dependencia)."
+  "62CCD69DD17E4F2F | AKI_Core": "Librería base (dependencia).",
+  "66824CED506075E9 | Lightweight Vegetation": "Optimiza el renderizado de la vegetación ajustando los LOD para ganar rendimiento.",
+  "66DC899A1E768FA2 | Improved Blood Effect Lite": "Versión del Improved Blood Effect más amigable para sistemas con pocos recursos.",
+  "6A7D15D9169B2570 | Pistalock": "HUD de aterrizaje y objetivos de entrenamiento para pilotos, controlado por el Game Master."
 }
