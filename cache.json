@@ -743,5 +743,10 @@
   "name": "PistaLock",
   "desc": "HUD de aterrizaje y objetivos de entrenamiento para pilotos, controlado por el Game Master.",
   "image": "https://ar-gcp-cdn.bistudio.com/image/c5b8/c40cd93df853adcee2f1a5f924e3c834f80b3120ae14b8799705bf754b9c/147649.jpg"
+ },
+ "6AB40721AAE70F67": {
+  "name": "Tierras de la Discordia",
+  "desc": "WIP",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/1b20/5abd5e48181b2accb44c3989c5f4b4516a7d24c6dec3690f93902681221b/13359.jpg"
  }
 }
