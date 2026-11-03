@@ -748,5 +748,15 @@
   "name": "Tierras de la Discordia",
   "desc": "WIP",
   "image": "https://ar-gcp-cdn.bistudio.com/image/1b20/5abd5e48181b2accb44c3989c5f4b4516a7d24c6dec3690f93902681221b/13359.jpg"
+ },
+ "6A2BD61A0EC6B82A": {
+  "name": "COC Moderno",
+  "desc": "Facciones, arsenales y vehículos modernos del COMANDO CONJUNTO DE OPERACIONES: Phantom Squadron, Apex Global Solutions y Unidos en Resistencia. Uso exclusivo del servidor COC.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/7e3b/4a1ff7b1d35fae5dd4ae2d0d83ae9e9cd0fda6178101fbd5401a09788a39/321203.jpg"
+ },
+ "6A7969EF3E334E45": {
+  "name": "HUD SU-33",
+  "desc": "Su-33 simple RU style HUD",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/81f1/b33c75b2caf69e463478ba819d6baf4b0e029200c63d65469a179e3dfecb/19978.jpg"
  }
 }
