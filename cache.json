@@ -758,5 +758,35 @@
   "name": "HUD SU-33",
   "desc": "Su-33 simple RU style HUD",
   "image": "https://ar-gcp-cdn.bistudio.com/image/81f1/b33c75b2caf69e463478ba819d6baf4b0e029200c63d65469a179e3dfecb/19978.jpg"
+ },
+ "669576C0BEEA9731": {
+  "name": "EE_Helicopter AI Transport",
+  "desc": "Helicopter AI Transport.\nRead the description!",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/9a37/1818c1e1db2c657ebf365d9e8d564e8ed260d63405e639e798384548ebb9/74258.jpg"
+ },
+ "68B2E735099BA541": {
+  "name": "AI Using Stingers",
+  "desc": "AI can use Stinger/Javelin and flares on helicopter.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/ec64/c0204417ed72cd642796b862afae2cb1af591ed1fa79ce656400ae0e97d6/271378.jpg"
+ },
+ "6867754CA817D856": {
+  "name": "6TP - Military Free Fall",
+  "desc": "A military free-fall parachute system, designed for immersive HALO/HAHO operations and tactical airborne insertions.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/cb56/d23f6f284c782004d49d05ca5da73acce402e1eb3941a70d19c08e51d063/402046.jpg"
+ },
+ "6A617901676B1B69": {
+  "name": "COC_Moderno_Vehiculos",
+  "desc": "VEHICULOS PARA EL COMANDO DE OPERACIONES CONJUNTAS",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/b17f/3ee1fe0dedf42ec09fc374bb3eb012d32aac863fa741c60121167bff8095/356353.jpg"
+ },
+ "69EEAA01F4A11001": {
+  "name": "Grey Mans Chute Framework",
+  "desc": "Grey Man's Parachute Framework",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/f7a3/aa22f2be4e62b2cf532250430259ff989d0922e9d24cbcbda9578ecf3929/261012.jpg"
+ },
+ "69ED484ED77C2513": {
+  "name": "K9 Max",
+  "desc": "K9 Max is currently a Work in Progress. A lot more chanes, Vest and helmets are weighted right. Console controls are in, you can Pet Dat Dawg. many more. Discord:https://discord.gg/H8U8Smkugs",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/1b88/e2e04758a2b56950e6df135fbed8555d08d83f1b68a0d110536ff1fac879/339866.jpg"
  }
 }
