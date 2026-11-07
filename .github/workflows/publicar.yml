@@ -9,6 +9,10 @@ on:
         description: "Publicar aunque no haya cambios"
         type: boolean
         default: false
+      probar_aviso:
+        description: "Solo mandar un mensaje de prueba al canal de administradores"
+        type: boolean
+        default: false
   push:                            # al editar estos archivos, publica enseguida
     paths:
       - "categorias.json"
@@ -24,7 +28,7 @@ concurrency:
 
 jobs:
   publicar:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04            # fijo: ubuntu-latest pasa a Ubuntu 26 desde el 19-oct-2026
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
@@ -39,12 +43,15 @@ jobs:
       - name: Publicar mods
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_ADMIN_WEBHOOK: ${{ secrets.DISCORD_ADMIN_WEBHOOK }}
           PANEL_URL: ${{ secrets.PANEL_URL }}
           PANEL_SERVER: ${{ secrets.PANEL_SERVER }}
           PANEL_API_KEY: ${{ secrets.PANEL_API_KEY }}
           PANEL_FILE: /config.json
         run: |
-          if [ "${{ github.event.inputs.forzar }}" = "true" ]; then
+          if [ "${{ github.event.inputs.probar_aviso }}" = "true" ]; then
+            python publicar_mods.py --test-aviso
+          elif [ "${{ github.event.inputs.forzar }}" = "true" ]; then
             python publicar_mods.py --force
           else
             python publicar_mods.py
