@@ -18,6 +18,7 @@ CATS_FILE   = "categorias.json"      # categoría -> lista de "modId | nombre"
 DESC_FILE   = "descripciones.json"   # opcional: {"modId": "descripción propia"}
 STATE_FILE  = "state.json"           # IDs de los mensajes ya publicados
 CACHE_FILE  = "cache.json"           # datos leídos de la Workshop
+NOTIFIED_FILE = "pendientes_avisados.json"   # mods nuevos de los que ya se avisó
 HASH_FILE   = "ultimo_hash.txt"      # huella de lo último publicado (para no publicar si no hubo cambios)
 ESTILO      = "lista"                # "lista" (compacto) o "tarjetas" (un embed por mod, con imagen)
 
@@ -30,6 +31,8 @@ def env(name, default=""):
 
 
 WEBHOOK  = env("DISCORD_WEBHOOK") or None
+ADMIN_WEBHOOK = env("DISCORD_ADMIN_WEBHOOK") or None   # canal PRIVADO de administradores (opcional)
+SIN_CAT  = "🆕 Sin categoría"
 
 LIST_DESC_LEN, CARD_DESC_LEN = 130, 200
 MAX_EMBEDS, MAX_CHARS, MAX_EMBED_DESC = 10, 5500, 3800   # límites de Discord con margen
@@ -37,10 +40,27 @@ MAX_EMBEDS, MAX_CHARS, MAX_EMBED_DESC = 10, 5500, 3800   # límites de Discord c
 
 # ───────────────────────── Utilidades ─────────────────────────
 def load_json(path, default=None):
+    """Lee un .json; tolera comas sobrantes y, si hay un error, indica la línea exacta."""
     if not os.path.exists(path):
         return default
     with open(path, encoding="utf-8") as f:
-        return json.load(f)
+        txt = f.read()
+    try:
+        return json.loads(txt)
+    except json.JSONDecodeError as e:
+        try:
+            data = json.loads(_strip_trailing_commas(_strip_comments(txt)))
+            print(f"Aviso: {path} tiene comas sobrantes o comentarios; se leyó igual. Conviene corregirlo.")
+            return data
+        except json.JSONDecodeError:
+            lines = txt.splitlines()
+            a, b = max(0, e.lineno - 3), min(len(lines), e.lineno + 1)
+            ctx = "\n".join(f"  línea {k + 1}: {lines[k]}" for k in range(a, b))
+            sys.exit(
+                f"El archivo {path} tiene un error de formato: {e.msg} (línea {e.lineno}, columna {e.colno}).\n"
+                f"{ctx}\n"
+                f"Revisá esa línea y la anterior: casi siempre falta una coma al final de la línea anterior."
+            )
 
 
 def fetch_config_text():
@@ -57,13 +77,17 @@ def fetch_config_text():
     r = requests.get(
         f"{base}/api/client/servers/{server}/files/contents",
         params={"file": env("PANEL_FILE", "/config.json")},
-        headers={"Authorization": f"Bearer {key}", "Accept": "Application/vnd.pterodactyl.v1+json"},
+        headers={"Authorization": f"Bearer {key}", "Accept": "application/json"},
         timeout=30,
     )
-    if r.status_code in (401, 403):
-        sys.exit(f"El panel rechazó la API key ({r.status_code}). Revisá que esté bien copiada.")
-    if r.status_code == 404:
-        sys.exit("El panel no encontró el servidor o el archivo (404). Revisá PANEL_SERVER y PANEL_FILE.")
+    if r.status_code in (401, 403, 404):
+        causa = {
+            401: "El panel rechazó la API key (401): no la reconoce, venció o fue borrada/regenerada.",
+            403: "La API key no tiene permiso para leer archivos de este servidor (403).",
+            404: "El panel no encontró el servidor o el archivo (404). Revisá PANEL_SERVER y PANEL_FILE.",
+        }[r.status_code]
+        detalle = re.sub(r"\s+", " ", r.text or "")[:200].replace(key, "***")   # mensaje propio del panel, sin la clave
+        sys.exit(f"{causa}\nRespuesta del panel: {detalle or '(vacía)'}")
     r.raise_for_status()
     return r.text
 
@@ -178,25 +202,146 @@ def scrape(mod_id):
 
 # ───────────────────────── Armado de embeds ─────────────────────────
 def group_mods(mods, cats):
+    """Reparte los mods según categorias.json. Devuelve (grupos, mods sin categoría)."""
     by_id = {m["modId"].upper(): m for m in mods}
-    grouped, assigned = {}, set()
+    grouped = {cat: [] for cat in cats}
+    assigned = set()
     for cat, entries in cats.items():
-        items = []
         for e in entries:
             mid = e[:16].upper()
             if mid in by_id:
-                items.append(by_id[mid]); assigned.add(mid)
+                grouped[cat].append(by_id[mid]); assigned.add(mid)
             else:
                 print(f"⚠ {e!r} está en categorias.json pero NO en la config del servidor")
-        if items:
-            grouped[cat] = items
     missing = [m for mid, m in by_id.items() if mid not in assigned]
-    if missing:
-        print(f"⚠ {len(missing)} mod(s) sin categoría, van a '🆕 Sin categoría':")
-        for m in missing:
-            print(f"    {m['modId']} | {m.get('name', '')}")
-        grouped["🆕 Sin categoría"] = missing
-    return grouped
+    return grouped, missing
+
+
+# Palabras clave para sugerir categoría (la clave es un trozo del nombre de la categoría).
+# Un "$" al final = palabra completa. Es solo una SUGERENCIA: puede equivocarse.
+KEYWORDS = {
+    "Servidor": ["optimiz", "performance", "fps", "admin", "cleaner", "leaderboard", "killfeed",
+                 "monitor", "discord", "limiter", "lod$", "lods$", "rendimiento"],
+    "Game Master": ["game master", "gamemaster", "zeus", "curator"],
+    "Comunidad": ["coc$", "jtf$"],
+    "Mundo": ["ambien", "weather", "clima", "lighthouse", "intel$", "sabotage", "door", "puerta",
+              "tree", "mission", "misi", "ambush", "convoy", "vegetation", "vegetaci"],
+    "Combate": ["blood", "sangre", "explosi", "shrapnel", "suppress", "supresi", "muzzle", "ballistic",
+                "balística", "grenade", "granada", "effect", "efecto", "bullet", "jam$", "ied$", "cqb", "bleed"],
+    "Audio": ["sound", "sonido", "audio", "voice", "voz", "voces", "radio", "comms", "earplug"],
+    "Vehículos": ["vehicle", "vehículo", "tank", "tanque", "truck", "btr", "apc$", "lav$", "boat",
+                  "rhib", "motorcycle", "moto$", "driving", "brake", "jeep", "humvee"],
+    "Aeronaves": ["heli", "aircraft", "plane$", "pilot", "flight", "vuelo", "jet$", "landing", "runway",
+                  "aterriza", "avión", "avion", "parachute", "paraca", "cockpit", "rotor"],
+    "Logística": ["logistic", "supply", "resupply", "cargo", "crate", "rappel", "rapel", "fastrope",
+                  "fast rope", "rope$", "cuerda", "fire support", "airdrop"],
+    "Movimiento": ["animation", "animaci", "ladder", "escalera", "climb", "sit$", "sentarse", "wirecut",
+                   "breath", "respiraci", "stance", "vault"],
+    "ACE": ["ace$", "medical", "médico", "medic$", "wound", "bandage", "captive", "prisioner", "surrender",
+            "carrying", "tourniquet"],
+    "Facciones": ["faction", "facci", "soldier", "soldado", "militia", "civilian", "civil", "ussr", "rangers",
+                  "police", "policía", "dog$", "dogs$", "perro", "character", "personaje"],
+    "Equipo": ["gear", "loadout", "uniform", "vest", "chaleco", "helmet", "casco", "glove", "guante",
+               "beret", "boina", "beard", "barba", "glasses", "lentes", "balaclava", "night vision",
+               "nvg", "backpack", "mochila", "clothing", "arsenal"],
+    "Armas": ["weapon", "arma$", "armas$", "rifle", "pistol", "smg$", "submetralleta", "optic", "óptica",
+              "scope", "sight", "ak-47", "ak47", "ak74", "mortar", "mortero", "launcher", "lanzador",
+              "attachment", "suppressor", "silenciador", "magazine", "cargador"],
+    "Librerías": ["framework", "library", "librería", "dependency", "dependencia", "core$"],
+}
+
+
+def _kw_pattern(kw):
+    return r"\b" + re.escape(kw[:-1]) + r"\b" if kw.endswith("$") else r"\b" + re.escape(kw)
+
+
+def suggest_category(text, cats):
+    """Devuelve la categoría (clave de categorias.json) con más palabras clave en el texto, o None."""
+    text = text.lower()
+    best, best_score = None, 0
+    for sub, kws in KEYWORDS.items():
+        cat = next((c for c in cats if sub.lower() in c.lower()), None)
+        if not cat:
+            continue
+        score = sum(1 for kw in kws if re.search(_kw_pattern(kw), text))
+        if score > best_score:
+            best, best_score = cat, score
+    return best
+
+
+def place_missing(grouped, missing, cats, cache, descs):
+    """Ubica cada mod sin categoría en la categoría sugerida (o en 'Sin categoría'). Devuelve la lista de pendientes."""
+    pending = []
+    for m in missing:
+        x = mod_info(m, cache, descs)
+        cat = suggest_category(f"{x['name']} {x['desc']}", cats)
+        grouped.setdefault(cat or SIN_CAT, []).append(m)
+        pending.append({**x, "suggested": cat})
+        print(f"⚠ Sin categoría: {x['id']} | {x['name']}  →  sugerida: {cat or 'ninguna'}")
+    for k in [k for k, v in grouped.items() if not v]:
+        del grouped[k]
+    return pending
+
+
+def _chunks(blocks, limit=1800):
+    out, cur = [], ""
+    for b in blocks:
+        if cur and len(cur) + len(b) + 2 > limit:
+            out.append(cur); cur = ""
+        cur += ("\n\n" if cur else "") + b
+    if cur:
+        out.append(cur)
+    return out
+
+
+def notify_pending(pending, dry=False):
+    """Avisa UNA sola vez, por el canal privado de admins, de cada mod nuevo sin clasificar."""
+    notified = set(load_json(NOTIFIED_FILE, []) or [])
+    current = {x["id"] for x in pending}
+    keep = notified & current                      # los ya clasificados salen de la lista de avisados
+    new = [x for x in pending if x["id"] not in notified]
+    if new:
+        repo = os.environ.get("GITHUB_REPOSITORY", "")
+        base = f"https://github.com/{repo}/edit/main/" if repo else ""
+        blocks = []
+        for x in new:
+            key = json.dumps(f"{x['id']} | {x['name']}", ensure_ascii=False)
+            desc = json.dumps(short(x["desc"], 100), ensure_ascii=False)
+            blocks.append(
+                f"**{x['name']}** · `{x['id']}`\n"
+                f"Categoría sugerida: **{x['suggested'] or 'ninguna (quedó en 🆕 Sin categoría)'}**\n"
+                f"```\ncategorias.json:\n{key},\ndescripciones.json (traducí el texto):\n{key}: {desc},\n```"
+            )
+        head = (f"## 🆕 {len(new)} mod(s) nuevo(s) sin clasificar\n"
+                "Ya aparecen en la lista pública, en la categoría sugerida. Para confirmarla o cambiarla, "
+                "pegá las líneas en GitHub (arriba de cada lista, terminadas en coma)."
+                + (f"\n✏️ <{base}categorias.json>\n✏️ <{base}descripciones.json>" if base else ""))
+        msgs = _chunks([head] + blocks)
+        if dry or not ADMIN_WEBHOOK:
+            print("Aviso a admins (no enviado: " + ("modo --dry" if dry else "falta DISCORD_ADMIN_WEBHOOK") + "):")
+            for m in msgs:
+                print(m.replace("\n", "\n   "))
+        else:
+            ok = True
+            for m in msgs:
+                r = send("POST", ADMIN_WEBHOOK, {"content": m, "allowed_mentions": {"parse": []}})
+                ok = ok and r.ok
+            if ok:
+                keep |= {x["id"] for x in new}
+                print(f"Aviso enviado a los administradores ({len(new)} mod/s).")
+            else:
+                print("⚠ No pude enviar el aviso a los administradores; se reintenta en la próxima corrida.")
+    if not dry:
+        with open(NOTIFIED_FILE, "w", encoding="utf-8") as f:
+            json.dump(sorted(keep), f)
+
+
+def test_notification():
+    """--test-aviso: manda un mensaje de prueba al canal de administradores."""
+    if not ADMIN_WEBHOOK:
+        sys.exit("Falta el Secret DISCORD_ADMIN_WEBHOOK")
+    r = send("POST", ADMIN_WEBHOOK, {"content": "✅ Prueba: el aviso de mods sin clasificar funciona en este canal."})
+    sys.exit("No pude enviar la prueba (" + str(r.status_code) + ")") if not r.ok else print("Mensaje de prueba enviado.")
 
 
 def mod_info(m, cache, descs):
@@ -290,6 +435,8 @@ def make_header(n, last_change=None):
 # ───────────────────────── Main ─────────────────────────
 def main():
     dry, refresh = "--dry" in sys.argv, "--refresh" in sys.argv
+    if "--test-aviso" in sys.argv:
+        test_notification(); return
     if not dry and not WEBHOOK:
         sys.exit("Falta la variable de entorno DISCORD_WEBHOOK")
 
@@ -316,7 +463,9 @@ def main():
         json.dump(cache, f, ensure_ascii=False, indent=1)
 
     # 2) Armar mensajes
-    grouped = group_mods(mods, cats)
+    grouped, missing = group_mods(mods, cats)
+    pending = place_missing(grouped, missing, cats, cache, descs)
+    notify_pending(pending, dry)
     batches = make_batches(build_embeds(grouped, cache, descs))
     header = make_header(len(mods), int(time.time()))
 
