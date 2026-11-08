@@ -310,12 +310,12 @@ def notify_pending(pending, dry=False):
             blocks.append(
                 f"**{x['name']}** · `{x['id']}`\n"
                 f"Categoría sugerida: **{x['suggested'] or 'ninguna (quedó en 🆕 Sin categoría)'}**\n"
-                f"```\ncategorias.json:\n{key},\ndescripciones.json (traducí el texto):\n{key}: {desc},\n```"
+                f"Descripción de la Workshop (en inglés): {desc}"
             )
         head = (f"## 🆕 {len(new)} mod(s) nuevo(s) sin clasificar\n"
                 "Ya aparecen en la lista pública, en la categoría sugerida. Para confirmarla o cambiarla, "
-                "pegá las líneas en GitHub (arriba de cada lista, terminadas en coma)."
-                + (f"\n✏️ <{base}categorias.json>\n✏️ <{base}descripciones.json>" if base else ""))
+                "abrí el formulario, pegá el ID del mod y elegí la categoría en la lista desplegable."
+                + (f"\n👉 <https://github.com/{repo}/actions/workflows/clasificar.yml> (botón **Run workflow**)" if repo else ""))
         msgs = _chunks([head] + blocks)
         if dry or not ADMIN_WEBHOOK:
             print("Aviso a admins (no enviado: " + ("modo --dry" if dry else "falta DISCORD_ADMIN_WEBHOOK") + "):")
