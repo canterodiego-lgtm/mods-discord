@@ -793,5 +793,10 @@
   "name": "COC Moderno - Armamento",
   "desc": "Summary\nFacciones, arsenales modernos del COMANDO CONJUNTO DE OPERACIONES: Phantom Squadron, Apex Global Solutions y Unidos en Resistencia. Uso exclusivo del servidor COC.",
   "image": "https://ar-gcp-cdn.bistudio.com/image/7e3b/4a1ff7b1d35fae5dd4ae2d0d83ae9e9cd0fda6178101fbd5401a09788a39/321203.jpg"
+ },
+ "6A51109FDBD6AF23": {
+  "name": "TAO_RHS_WCS_Compat",
+  "desc": "T.A.O RHS/WCS COMPATIBILITY",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/f9e4/ffbd02cd83c8b354d8158f1b935ba6469d7473638c460bffbd4095e3c00f/107585.jpg"
  }
 }
