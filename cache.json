@@ -798,5 +798,10 @@
   "name": "TAO_RHS_WCS_Compat",
   "desc": "T.A.O RHS/WCS COMPATIBILITY",
   "image": "https://ar-gcp-cdn.bistudio.com/image/f9e4/ffbd02cd83c8b354d8158f1b935ba6469d7473638c460bffbd4095e3c00f/107585.jpg"
+ },
+ "3D0B3E440696E41C": {
+  "name": "CCT - Mod Disfarce Civil",
+  "desc": "Mod para permitir que os jogadores sejam \"vistos\" como civis por todas as facções.\n\nMod that allows players to be perceived as civilians by all factions.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/02a6/624ad8cd0428c4e809c9351dbad71567293f5f838beb3704e56f37892d96/40447.jpg"
  }
 }
