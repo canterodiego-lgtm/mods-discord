@@ -803,5 +803,15 @@
   "name": "CCT - Mod Disfarce Civil",
   "desc": "Mod para permitir que os jogadores sejam \"vistos\" como civis por todas as facções.\n\nMod that allows players to be perceived as civilians by all factions.",
   "image": "https://ar-gcp-cdn.bistudio.com/image/02a6/624ad8cd0428c4e809c9351dbad71567293f5f838beb3704e56f37892d96/40447.jpg"
+ },
+ "6AAEF34C791421D1": {
+  "name": "WCS_LoadoutEditor_V2",
+  "desc": "A custom loadout editor that provides players with a personalized arsenal and gear selection system for the WCS servers.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/d269/0a6eb6fc35970b81c8b4dfc6cc162a5e62bd23565e900f8b1c043355f3ff/92472.jpg"
+ },
+ "646E249764095363": {
+  "name": "T.A.O RHS AND WP PACK COMPAT",
+  "desc": "Mod to use in extention of Tactical Animation Overhaul TEST\nFuture compat for weapons packs dependent of RHS will be here as well.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/c9b4/b5d5c1cbd23a7d5f642a4e9803a6c42093af7a74d295a3c16a6accab166c/441248.jpg"
  }
 }
