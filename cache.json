@@ -813,5 +813,40 @@
   "name": "T.A.O RHS AND WP PACK COMPAT",
   "desc": "Mod to use in extention of Tactical Animation Overhaul TEST\nFuture compat for weapons packs dependent of RHS will be here as well.",
   "image": "https://ar-gcp-cdn.bistudio.com/image/c9b4/b5d5c1cbd23a7d5f642a4e9803a6c42093af7a74d295a3c16a6accab166c/441248.jpg"
+ },
+ "695276A116A9D046": {
+  "name": "EE_Heli_Enhanced_Frame",
+  "desc": "Reusable heli transport with fast ropes, rope reboarding, landing zones, custom RT return points, selectable markers, LP flight routes, group transport, and HALO jump support.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/b616/b59a5295a31eba92d19158a48490940c747082ad62ddbb538f6290b11f6a/257376.jpg"
+ },
+ "6AE21C627148DE8D": {
+  "name": "LT-308 Takedown Rifle",
+  "desc": "A bolt-action takedown rifle that packs into its own hard case and is built by hand, part by part, or taken ready-built from the US arsenal. In 7.62x51 (LT-308) and 6.8x51 (LT-6.8).",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/8880/deb002e16e7ee3522f7eb2d51c60a447a84db096bff7e35c4ead3b3c9b13/107849.jpg"
+ },
+ "0B614B653AD7EBE0": {
+  "name": "GL06 - Grenade launcher",
+  "desc": "The B&T GL06 40 mm grenade launcher as a standalone weapon: 3D red-dot sight, hand-animated reload and unload, safety, side rails and a WCS launcher-slot version.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/fd52/692bec155b86f5dba8bd2867e168a3e7fa1926aeef334f1605988211de8d/297941.jpg"
+ },
+ "6ADD5E4546FE2C86": {
+  "name": "MRAD_338 NOR SPEC",
+  "desc": "Barrett_MRAD_338",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/e52e/dc40d8a4136faa8c3409a689e41ce867a0c30269b009ba0f13954780fe25/112919.jpg"
+ },
+ "64722DADC53CB75E": {
+  "name": "NV-System",
+  "desc": "Modern lightweight night vision system with functional IR support.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/a696/04e2e5fe5b7e97f84233405fdc6880ca55430dd20ba2878e828ee13cca00/106551.jpg"
+ },
+ "7D5C98A1E3B2F001": {
+  "name": "SV98",
+  "desc": "The SV-98 bolt-action sniper rifle in 7.62x54R, with a 3-12x scope that has a built-in laser rangefinder.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/d7e0/4469aa654b4c0f6f93dcf0fb2375faba8d28228b55bf983fc8a6e8f922cf/69578.jpg"
+ },
+ "6AEAE0ABE98285E7": {
+  "name": "VKS",
+  "desc": "d",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/af3e/7396e9deede13ae417c26e20045e2a3efc1e7e20c06486398462b2123c12/405882.jpg"
  }
 }
