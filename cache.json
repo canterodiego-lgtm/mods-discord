@@ -848,5 +848,15 @@
   "name": "VKS",
   "desc": "d",
   "image": "https://ar-gcp-cdn.bistudio.com/image/af3e/7396e9deede13ae417c26e20045e2a3efc1e7e20c06486398462b2123c12/405882.jpg"
+ },
+ "6A0C42DABA2357C0": {
+  "name": "COC Tapones y Voz",
+  "desc": "Tapones regulables, alcance de voz (susurro/normal/grito) y volumen de voces, con HUD. Independiente de facciones y equipo.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/d8e0/5a1722e5b1ffeb28039c7759b14f95574cdbcbd242a0f332cc8513f9f2a9/341308.jpg"
+ },
+ "6A2B534B6E2E8008": {
+  "name": "Simply Audible",
+  "desc": "Realistic Arma Reforger sound overhaul for vanilla and modded weapons, adding dynamic distance, occlusion, reflections, reverb, and natural sound tails. Works with other sound mods.",
+  "image": "https://ar-gcp-cdn.bistudio.com/image/0dd5/a93c98ffc4bf68d35fe56bcab9e6ee9dc51e6c06a4fc65792b9259d5f93f/85243.jpg"
  }
 }
